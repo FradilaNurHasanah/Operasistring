@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package jo11;
-
+import java.util.Scanner;
 public class ConvertVocal2Angka {
     private static void tampilJudul(String identitas)
     {
@@ -17,5 +17,15 @@ public class ConvertVocal2Angka {
         String identitas = "Fradila Nur Hasanah / XRPL2 / 15";
         
         tampilJudul(identitas);
+        String kalimat = tampilInput();
+       
+        }
+        private static String tampilInput(){
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Masukkan kalimat : ");
+            String kalimat = scanner.nextLine();
+            System.out.println("kalimat asli : " + kalimat);
+            return kalimat;
+        }
     }
 }
